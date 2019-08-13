@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Chapagain_AutoCurrency>
-            <version>0.1.7</version>
+            <version>0.1.8</version>
         </Chapagain_AutoCurrency>
     </modules>
     <global>
@@ -19,4 +19,11 @@
             </autocurrency>
         </helpers>		
     </global>
+    <default>
+		<catalog>
+			<autocurrency>
+				<enable_disable>1</enable_disable>				
+			</autocurrency>
+		</catalog>
+	</default>
 </config>

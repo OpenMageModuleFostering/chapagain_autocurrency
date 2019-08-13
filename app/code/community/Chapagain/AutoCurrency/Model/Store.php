@@ -19,9 +19,12 @@ class Chapagain_AutoCurrency_Model_Store extends Mage_Core_Model_Store
      */
     public function getDefaultCurrencyCode()
     {
-        $result = $this->getConfig(Mage_Directory_Model_Currency::XML_PATH_CURRENCY_DEFAULT);		
-				
-		return $this->getCurrencyCodeByIp($result);		
+		if (Mage::helper('autocurrency')->isEnabled()) {
+			$result = $this->getConfig(Mage_Directory_Model_Currency::XML_PATH_CURRENCY_DEFAULT);		
+			return $this->getCurrencyCodeByIp($result);
+		} else {
+			return parent::getDefaultCurrencyCode();
+		}
     }
 		
 	/**

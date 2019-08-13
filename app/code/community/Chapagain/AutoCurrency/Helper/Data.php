@@ -27,13 +27,18 @@ class Chapagain_AutoCurrency_Helper_Data extends Mage_Core_Helper_Abstract
 		return $geoIp;
 	}
 	
+	public function isEnabled()
+    { 		
+        return Mage::getStoreConfig('catalog/autocurrency/enable_disable');      
+    }
+	
 	/**
      * Get IP Address
      *
      * @return string
      */
 	public function getIpAddress() 
-	{			
+	{		
 		return $_SERVER['REMOTE_ADDR'];
 	}
 }
