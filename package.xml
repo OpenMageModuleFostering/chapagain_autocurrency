@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package>
+    <name>Chapagain_AutoCurrency</name>
+    <version>0.1.5</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>A currency switcher extension which automatically switches store currency based on visitor's IP address.</summary>
+    <description>Auto Currency extension tracks visitor's IP address and automatically changes the store currency to the visitor's location currency. Visitor can switch to his/her desired currency at any time.&#xD;
+&#xD;
+This extension uses MaxMind's GeoIP technology for IP address lookup.&#xD;
+&#xD;
+No extra configuration settings is to be made. Just install the module in your multi-currency Magento shop and the module will work on the fly.&#xD;
+&#xD;
+Features:-&#xD;
+&#xD;
+Easy to install and use&#xD;
+100% Free&#xD;
+100% Open Source</description>
+    <notes>Updated with latest version of GeoIP.dat</notes>
+    <authors><author><name>Mukesh Chapagain</name><user>chapagain</user><email>mukesh.chapagain@gmail.com</email></author></authors>
+    <date>2012-09-24</date>
+    <time>07:31:18</time>
+    <contents><target name="magecommunity"><dir name="Chapagain"><dir name="AutoCurrency"><dir name="Helper"><file name="Data.php" hash="63e33740dc53723ac4e8b1a5a20c34b8"/></dir><dir name="Model"><file name="Store.php" hash="36deac5b59fcbebfc92519348cab50ae"/></dir><dir name="etc"><file name="config.xml" hash="5e8bfdd3f5f423f5555039fd840da692"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Chapagain_AutoCurrency.xml" hash="dd65769f686b4c12011f5d09e18249ff"/></dir></target><target name="mage"><dir name="var"><dir name="geoip"><file name="GeoIP.dat" hash="9533bdd7c9705ad2bec16dba59ce092f"/><file name="geoip.inc" hash="e8a6c661ddcb38bf80471939391cab6d"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

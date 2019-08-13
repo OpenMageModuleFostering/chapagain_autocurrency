@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Chapagain_AutoCurrency",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "A currency switcher extension which automatically switches store currency based on visitor's IP address.",
+    "authors": [
+    {
+        "name": "Mukesh Chapagain",
+        "email": "mukesh.chapagain@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
