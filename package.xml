@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>Chapagain_AutoCurrency</name>
-    <version>0.1.6</version>
+    <version>0.1.7</version>
     <stability>stable</stability>
     <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
     <channel>community</channel>
@@ -18,11 +18,11 @@ Features:-&#xD;
 Easy to install and use&#xD;
 100% Free&#xD;
 100% Open Source</description>
-    <notes>Updated with latest version of GeoIP.dat</notes>
+    <notes>Fixed issue of module not working for some countries. Updated geoip.inc file.</notes>
     <authors><author><name>Mukesh Chapagain</name><user>chapagain</user><email>mukesh.chapagain@gmail.com</email></author></authors>
-    <date>2012-09-24</date>
-    <time>07:45:34</time>
-    <contents><target name="magecommunity"><dir name="Chapagain"><dir name="AutoCurrency"><dir name="Helper"><file name="Data.php" hash="63e33740dc53723ac4e8b1a5a20c34b8"/></dir><dir name="Model"><file name="Store.php" hash="36deac5b59fcbebfc92519348cab50ae"/></dir><dir name="etc"><file name="config.xml" hash="0c65b87b6571e179c76f7f522c868fd3"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Chapagain_AutoCurrency.xml" hash="dd65769f686b4c12011f5d09e18249ff"/></dir></target><target name="mage"><dir name="var"><dir name="geoip"><file name="GeoIP.dat" hash="9533bdd7c9705ad2bec16dba59ce092f"/><file name="geoip.inc" hash="e8a6c661ddcb38bf80471939391cab6d"/></dir></dir></target></contents>
+    <date>2013-10-20</date>
+    <time>08:41:20</time>
+    <contents><target name="magecommunity"><dir name="Chapagain"><dir name="AutoCurrency"><dir name="Helper"><file name="Data.php" hash="6649b9ad502d88f9755d35df1a7ea0ee"/></dir><dir name="Model"><file name="Store.php" hash="36deac5b59fcbebfc92519348cab50ae"/></dir><dir name="etc"><file name="config.xml" hash="e0699238986f2a1d8bd666020bed5488"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Chapagain_AutoCurrency.xml" hash="dd65769f686b4c12011f5d09e18249ff"/></dir></target><target name="mage"><dir name="var"><dir name="geoip"><file name="GeoIP.dat" hash="9533bdd7c9705ad2bec16dba59ce092f"/><file name="geoip.inc" hash="f2e497053c5d7dbd39431d14a87b2b27"/></dir></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
 </package>

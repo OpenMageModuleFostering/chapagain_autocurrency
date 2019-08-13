@@ -33,8 +33,7 @@ class Chapagain_AutoCurrency_Helper_Data extends Mage_Core_Helper_Abstract
      * @return string
      */
 	public function getIpAddress() 
-	{	
-		//return "124.41.230.51";
+	{			
 		return $_SERVER['REMOTE_ADDR'];
 	}
 }
