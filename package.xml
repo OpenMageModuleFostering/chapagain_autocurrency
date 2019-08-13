@@ -1,28 +1,9 @@
 <?xml version="1.0"?>
-<package>
-    <name>Chapagain_AutoCurrency</name>
-    <version>0.1.9</version>
-    <stability>stable</stability>
-    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
-    <channel>community</channel>
-    <extends/>
-    <summary>A currency switcher extension which automatically switches store currency based on visitor's IP address.</summary>
-    <description>Auto Currency extension tracks visitor's IP address and automatically changes the store currency to the visitor's location currency. Visitor can switch to his/her desired currency at any time.&#xD;
-&#xD;
-This extension uses MaxMind's GeoIP technology for IP address lookup.&#xD;
-&#xD;
-No extra configuration settings is to be made. Just install the module in your multi-currency Magento shop and the module will work on the fly.&#xD;
-&#xD;
-Features:-&#xD;
-&#xD;
-Easy to install and use&#xD;
-100% Free&#xD;
-100% Open Source</description>
-    <notes>Minor text change for configuration settings option</notes>
-    <authors><author><name>Mukesh Chapagain</name><user>chapagain</user><email>mukesh.chapagain@gmail.com</email></author></authors>
-    <date>2013-10-22</date>
-    <time>06:00:40</time>
-    <contents><target name="magecommunity"><dir name="Chapagain"><dir name="AutoCurrency"><dir name="Helper"><file name="Data.php" hash="9ae32ce80508d03b79fd462228c7d2ee"/></dir><dir name="Model"><file name="Store.php" hash="f4ccbef38b82b6a9b27093da2ce660e4"/></dir><dir name="etc"><file name="config.xml" hash="d8b81e0591d45ee5a188753e350233b8"/><file name="system.xml" hash="b581f1aeb562ef9e220489351bf58d5c"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Chapagain_AutoCurrency.xml" hash="dd65769f686b4c12011f5d09e18249ff"/></dir></target><target name="mage"><dir name="var"><dir name="geoip"><file name="GeoIP.dat" hash="9533bdd7c9705ad2bec16dba59ce092f"/><file name="geoip.inc" hash="f2e497053c5d7dbd39431d14a87b2b27"/></dir></dir></target></contents>
-    <compatible/>
-    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
-</package>
+<package><name>Chapagain_AutoCurrency</name><version>0.2.1</version><stability>stable</stability><license>OSL v3.0</license><channel>community</channel><extends></extends><summary>A currency switcher extension which automatically switches store currency based on visitor's IP address.</summary><description>Auto Currency extension tracks visitor's IP address and automatically changes the store currency to the visitor's location currency. Visitor can switch to his/her desired currency at any time.
+
+This extension uses two IP Address databases for IP Address lookup. One is MaxMind's GeoIP and the other is Webnet77's Ip2Country database. Shop admins have the option to choose between these two databases. The default one is Webnet77's Ip2Country database. Note: Webnet77's ip2country database is more reliable/accurate than MaxMind's database.
+
+No extra configuration settings is to be made. Just install the module in your multi-currency Magento shop and the module will work on the fly.
+
+You can also Enable or Disable the module from configuration setting. 
+System -&gt; Configuration -&gt; CATALOG -&gt; Catalog -&gt; Auto Currency</description><notes>Updated IP address database files</notes><authors><author><name>Mukesh Chapagain</name><user>chapagain</user><email>mukesh.chapagain@gmail.com</email></author></authors><date>2017-02-16</date><time>2:58:23</time><compatible></compatible><dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies><contents><target name="mage"><dir name="var"><dir name="geoip"><file name="GeoIP.dat" hash="5cde9ef1ed0baea1dc68e20f60aedd36"/><file name="GeoIPv6.dat" hash="b975ef15640ef37c78ac40cd021e225d"/><file name="geoip.inc" hash="f8f704ef71b5d294c7530dc5637b6638"/><dir name="ip2country"><file name="Ip2Country.php" hash="e4c874a15745221b402b78b8c7366dc1"/><file name="ip2country.dat" hash="980ba498f9304460e0c2df781b0b0a00"/></dir></dir></dir><dir name="app"><dir name="etc"><dir name="modules"><file name="Chapagain_AutoCurrency.xml" hash="dd65769f686b4c12011f5d09e18249ff"/></dir></dir><dir name="code"><dir name="community"><dir name="Chapagain"><dir name="AutoCurrency"><dir name="Model"><file name="Store.php" hash="a16e9c173acc2d539b302c1500370f4a"/><dir name="System"><dir name="Config"><dir name="Source"><file name="Database.php" hash="90a0a1ae6616c583284e51c629132e89"/></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="d853b8b6c2baa439bc7c59cf14a0b023"/></dir><dir name="etc"><file name="config.xml" hash="5050eb747e75d8f431c83399dddbf653"/><file name="system.xml" hash="53c818634d95422a194e1816bbc3190d"/></dir></dir></dir></dir></dir></dir></target></contents></package>

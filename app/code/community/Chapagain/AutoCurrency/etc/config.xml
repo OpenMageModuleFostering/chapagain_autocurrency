@@ -2,11 +2,14 @@
 <config>
     <modules>
         <Chapagain_AutoCurrency>
-            <version>0.1.9</version>
+            <version>0.2.1</version>
         </Chapagain_AutoCurrency>
     </modules>
     <global>
-        <models>            
+        <models>  
+			<autocurrency>
+                <class>Chapagain_AutoCurrency_Model</class>                
+            </autocurrency>          
 			<core>
 				<rewrite>
 					<store>Chapagain_AutoCurrency_Model_Store</store>
