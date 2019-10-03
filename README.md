@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 A currency switcher extension which automatically switches store currency based on visitor's IP address.
